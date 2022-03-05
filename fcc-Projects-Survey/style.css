@@ -1,0 +1,233 @@
+* {
+  /* border: 1px solid red; */
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(96, 94, 159);
+  background: linear-gradient(rgba(96, 94, 159, 0.8), rgba(96, 94, 159, 0.9)),
+    url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80")
+      center/cover no-repeat fixed;
+  width: 100vw;
+  height: 100%;
+}
+#title {
+  display: block;
+  margin: 3.125rem auto 0 auto;
+  text-align: center;
+  /* align-content: center; */
+  width: 520px;
+  line-height: 2.35rem;
+}
+#description {
+  display: block;
+  width: 520px;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 1.1rem;
+  margin: 0.5rem auto 1.875rem auto;
+}
+#main {
+  width: 540px;
+  height: 100%;
+  border: 0.000001px solid rgba(47, 45, 72, 0.8);
+  border-radius: 0.3125rem;
+  margin: auto;
+  background: rgba(27, 26, 43, 0.8);
+  font-size: 1.09rem;
+  letter-spacing: 0.5px;
+}
+
+form {
+  width: 452px;
+  margin: auto;
+  margin: 2.75rem auto 4.125rem;
+}
+
+span {
+  font-weight: normal;
+  font-size: 0.9rem;
+}
+#name-label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+#name {
+  display: block;
+  height: 2.375rem;
+  width: 452px;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding-left: 0.625rem;
+}
+#email-label {
+  display: block;
+  margin: 1.75rem 0 0.5rem 0;
+}
+#email {
+  display: block;
+  height: 2.375rem;
+  width: 452px;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding-left: 0.625rem;
+}
+#number-label {
+  display: block;
+  margin: 1.75rem 0 0.5rem 0;
+}
+#number {
+  display: block;
+  height: 2.375rem;
+  width: 452px;
+  border-radius: 6px;
+  font-size: 1rem;
+  padding-left: 0.625rem;
+}
+#dropdown1,
+#dropdown2 {
+  display: block;
+  margin: 1.75rem 0 0.5rem 0;
+}
+.dropdown {
+  display: block;
+  padding-left: 0.625rem;
+  color: rgba(0, 0, 0, 0.65);
+  height: 2.375rem;
+  width: 452px;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+option {
+  color: rgba(0, 0, 0, 0.65);
+}
+#radio {
+  display: block;
+  margin: 1.75rem 0 0.5rem 0;
+}
+.radio-divs {
+  margin-bottom: 8px;
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  margin-bottom: 0.5rem;
+}
+input.radio {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.radio-values {
+  display: inline-block;
+  line-height: 1.25rem;
+  margin-left: 0.7rem;
+  vertical-align: middle;
+  text-align: left;
+}
+#checkboxes {
+  display: inline-block;
+  margin: 1.75rem 0 0.5rem 0;
+}
+.checkboxes {
+  display: flex;
+  align-content: center;
+  justify-content: left;
+  margin-bottom: 0.7rem;
+}
+input.checkbox {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: inline-block;
+  padding: 20px;
+  align-items: baseline;
+}
+.checkboxes-value {
+  display: inline-block;
+  line-height: 1.25rem;
+  margin-left: 0.7rem;
+  vertical-align: middle;
+  text-align: center;
+}
+#textarea-label {
+  margin-top: 20px;
+  display: block;
+}
+#textarea {
+  margin-top: 8px;
+  margin-bottom: 34px;
+  display: block;
+  width: 452px;
+  height: 120px;
+  padding: 0.625rem;
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.65);
+}
+#submit {
+  height: 2.875rem;
+  width: 452px;
+  background: #37af65;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 753px) {
+  #main {
+    width: 720px;
+  }
+  form {
+    width: 632px;
+  }
+  #name,
+  #email,
+  #number,
+  #radio,
+  #submit,
+  #checkboxes {
+    width: 632px;
+  }
+  #textarea {
+    width: 632px;
+  }
+  .dropdown {
+    width: 632px;
+  }
+  #title {
+    width: 700px;
+  }
+  #description {
+    width: 700px;
+  }
+}
+@media screen and (max-width: 553px) {
+  #main {
+    width: 100vw;
+  }
+  form {
+    width: 83.23%;
+  }
+  #name,
+  #email,
+  #number,
+  #radio,
+  #textarea,
+  #submit,
+  #checkboxes {
+    width: 100%;
+  }
+  #textarea {
+    width: 100%;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  #title {
+    width: 94.59%;
+  }
+  #description {
+    width: 94.59%;
+  }
+}
